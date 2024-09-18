@@ -1,0 +1,119 @@
+body {
+    background-color: white; 
+    color: black; 
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+container {
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2em;
+    color: grey; 
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+}
+
+.subtitle {
+    font-size: 2.5em;
+    color: black;
+    font-weight: bold;
+    border-left: 5px solid black; 
+    padding-left: 10px;
+    margin-top: 0.5em;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.content-box {
+    background-color: #f0f0f0; 
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 0 auto; }
+
+section h3 {
+    font-size: 1.5em;
+    color: grey; 
+    margin-bottom: 15px;
+}
+
+blockquote {
+    font-style: italic;
+    color: black;
+    background-color: #e0e0e0; 
+    border-left: 5px solid black; 
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px; 
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+    background-color: grey; 
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.badge:hover {
+    background-color: black; /* Black on hover */
+    color: white; /* White text on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Specific Badges */
+.badge.twitter {
+    background-color: #1da1f2; /* Twitter blue */
+}
+
+.badge.linkedin {
+    background-color: #0077b5; /* LinkedIn blue */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .title, .subtitle {
+        font-size: 1.5em;
+    }
+
+    section h3 {
+        font-size: 1.2em;
+    }
+}
+/* About Image Styling */
+.about-image {
+    width: 100%; /* Responsive width */
+    max-width: 400px; /* Limit maximum size */
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: block; /* Treat the image as a block element */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto;
+}
